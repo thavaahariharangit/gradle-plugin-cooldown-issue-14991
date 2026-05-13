@@ -1,0 +1,14 @@
+plugins {
+  id("uk.gov.justice.hmpps.gradle-spring-boot") version "10.1.2"
+}
+
+dependencies {
+  implementation("org.springframework.boot:spring-boot-starter-web")
+  testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+
+java {
+  toolchain {
+    languageVersion.set(JavaLanguageVersion.of(21))
+  }
+}
